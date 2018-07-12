@@ -1,14 +1,9 @@
 language: python
 python:
-
 - '3.4'
-
 - '3.5'
-
 - '3.6'
-
 - '3.7'
-
 install:
 - pip install --upgrade pip
 - pip install .[dev]
@@ -20,8 +15,8 @@ deploy:
   provider: pypi
   user: dusktreader
   password:
-    secure: "This needs to be replaced by running `travis-encrypt` from pip"
-  on:
+    secure: jpeP9I8Cbr3U7sDH5QQH5PXvyCoYN7L8M0zUuK1iYgePYxrFTN4l/S5ABeHprWcY3iihBWBSPvPfro7sQlOUPFq/nq/Lgfq98SmWxnmuWrszOLBHF4ukOvtq3UcRiIc/wY6l0JLlMsyUHp3r0Jp1Y2WG217nBC/UMtG9NnworVaVMh/ZmWC+2WTNh9nqFvf8A9rsuLP0Rl0sznBD/LS7OcwrJuf+kmhdxzm+zQtunf3N8hKCUTdcnfN67eA4BvcEreRoU20Sr4fCW8HCX012S4LNMpW/x+VBtiu8PtuElBrG78WKfcdcKp4QKunjx+O93BXKrZ7qi6gxyA9U9AzvkPLQDKBiRcCk0jn48f28fpY6oPDFuAbojjzXWp/IY0+QOVfuZEroe1JkzYYHtMb7VtM9rCrabi0HIEGPOMbbk/tZbEFl5b0d+7arAvA+BRSWya5otXMKP5qsUSmqlyKtXbZqq2EP8yHXQwFIyZnRlECAhu16Rs726L5gqsa2kyAioMSgVDidmEWKt9PF2QFB3NUpqNaueS1eO/FbGDRUF7eSdeuhc1IjHt4nEZi+5k6YU1vfqRqOmyxdzsYBhnYPeoMjOydYXokQThDXUqtPUe0xeYwcDtkp8P4gz0ypPsf+ESbKSWDAh7K/ctg8SXP9fYpTMbOByZuD95aAoxCm2wE=
+  true:
     tags: true
     distributions: sdist bdist_wheel
     repo: dusktreader/weighted-choice
